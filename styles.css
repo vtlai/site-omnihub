@@ -31,3 +31,18 @@
 @media(max-width:1150px){.hero h1{font-size:4.5vw}.hero-description{font-size:16px}.hero-actions .button{font-size:13px}}
 @media(max-width:900px){.hero h1{font-size:4.85vw}.hero-description{font-size:15px}.hero-actions{flex-direction:column;align-items:flex-start}.integration-brand{width:185px}.brand-art img{max-width:136px}.integration-carousel{margin-top:30px}}
 @media(max-width:650px){.hero h1{font-size:clamp(35px,8.9vw,56px);line-height:1.12}.hero-description{font-size:17px}.hero-actions{flex-direction:row;align-items:center;gap:19px}.hero-actions .button{font-size:13px;padding:15px}.hero .eyebrow{font-size:11px}.integration-carousel{margin-top:26px;gap:14px}.integration-sequence{gap:14px;padding-right:14px}.integration-brand{width:170px;padding:14px}.brand-art{height:76px;margin-bottom:14px}.brand-art img{max-width:130px;max-height:49px}.integration-brand>strong{font-size:15px}.integration-brand>span{font-size:10px}.integration-connectors{gap:12px 20px;padding-bottom:23px}.integration-connectors>span{width:100%;font-size:12px}.integration-connectors>strong{font-size:13px}}
+
+/* Primeira dobra: uma mensagem e uma ação. */
+.hero-focused{background:#fff;padding:88px 0 80px}
+.hero-focused .hero-layout{display:block}
+.hero-focused .hero-copy{max-width:1120px;margin:auto;padding:0;text-align:center}
+.hero-focused h1{font-size:clamp(44px,5vw,72px);line-height:1.08;letter-spacing:-.055em;text-wrap:balance}
+.hero-focused .hero-description{max-width:650px;margin:26px auto 0;font-size:19px;line-height:1.65}
+.hero-focused .hero-actions{justify-content:center;align-items:center;flex-direction:row;margin-top:30px}
+.hero-focused .hero-actions .button{font-size:15px;padding:17px 24px}
+.demo-section{background:var(--soft);padding:72px 0}
+.demo-layout{display:grid;grid-template-columns:.7fr 1.3fr;gap:64px;align-items:center}
+.demo-intro p{font-size:18px;color:var(--muted);max-width:320px;margin-top:22px}
+.demo-section .video-preview{padding:10px;width:100%;box-shadow:none}
+@media(max-width:900px){.demo-layout{gap:32px}.demo-intro h2{font-size:34px}.demo-intro p{font-size:16px}}
+@media(max-width:650px){.hero-focused{padding:52px 0}.hero-focused h1{font-size:clamp(36px,9vw,56px);line-height:1.1}.hero-focused .hero-description{font-size:16px;margin-top:23px;max-width:370px}.hero-focused .hero-description br{display:none}.hero-focused .hero-actions{margin-top:26px}.hero-focused .hero-actions .button{font-size:14px;padding:16px 20px}.demo-section{padding:44px 0}.demo-layout{grid-template-columns:1fr;gap:25px}.demo-intro h2{font-size:34px}.demo-intro h2 br{display:none}.demo-intro p{max-width:350px;margin-top:14px}.demo-section .video-preview{padding:7px}}

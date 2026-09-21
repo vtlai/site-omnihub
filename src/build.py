@@ -55,7 +55,7 @@ for i,row in enumerate([brand_cards[:9],brand_cards[9:]]):
  sequence=''.join(row)
  integration_groups+=f'<div class="integration-marquee" role="region" aria-label="Integrações da OmniHub, faixa {i+1}"><div class="integration-track {"reverse" if i else ""}"><div class="integration-sequence">{sequence}</div><div class="integration-sequence" aria-hidden="true">{sequence}</div></div></div>'
 home=(R/'src/home.html').read_text()
-for token,value in {'WA':WA,'CLIENTS':client_imgs(range(len(clients))),'PLAN_ROWS':planrows,'FAQ':faqhtml,'CUSTOMER_STORY':delivery_html,'INTEGRATION_GROUPS':integration_groups}.items():
+for token,value in {'WA':WA,'WA_DEMO':WA_DEMO,'CLIENTS':client_imgs(range(len(clients))),'PLAN_ROWS':planrows,'FAQ':faqhtml,'CUSTOMER_STORY':delivery_html,'INTEGRATION_GROUPS':integration_groups}.items():
  home=home.replace('{{'+token+'}}',value)
 (R/'index.html').write_text(page('OmniHub | O CRM que se adapta à sua empresa','Sua empresa não precisa se adaptar às limitações do software. Reúna CRM e atendimento com personalização de funcionalidades e integrações no anual, sob análise técnica.',home))
 subhero=lambda label,title,desc:f'<section class="subhero"><div class="wrap"><span class="eyebrow">{label}</span><h1>{title}</h1><p>{desc}</p></div></section>'
