@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://omnihub.site/sitemap.xml

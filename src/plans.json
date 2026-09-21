@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Essencial",
+    "monthly": 297,
+    "annual": 2850,
+    "subtitle": "Organize a operação e aproxime sua equipe.",
+    "features": [
+      "3.000 conversas por mês",
+      "5.000 contatos",
+      "10 automações ativas",
+      "2 agentes de IA",
+      "5 integrações por webhook",
+      "80 requisições de API por minuto"
+    ]
+  },
+  {
+    "name": "Crescimento",
+    "monthly": 597,
+    "annual": 5730,
+    "subtitle": "Mais capacidade para acompanhar seu ritmo.",
+    "features": [
+      "15.000 conversas por mês",
+      "50.000 contatos",
+      "30 automações ativas",
+      "5 agentes de IA",
+      "20 integrações por webhook",
+      "150 requisições de API por minuto"
+    ]
+  },
+  {
+    "name": "Escala",
+    "monthly": 797,
+    "annual": 7650,
+    "subtitle": "Para operações com um volume maior.",
+    "features": [
+      "Conversas e contatos ilimitados",
+      "Automações e webhooks ilimitados",
+      "10 agentes de IA",
+      "300 requisições de API por minuto",
+      "Suporte dedicado e onboarding guiado",
+      "Configuração de agentes pela equipe"
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {"category":"Atendimento e telefonia","names":["Meta","Twilio","Gupshup","Wavoip","TecnoVoz","E-mail"]},
+  {"category":"Pagamentos e vendas","names":["Asaas","PayPal","Greenn","Hotmart","Kiwify"]},
+  {"category":"Jurídico","names":["ADVBOX","Judit"]},
+  {"category":"Agenda e documentos","names":["Google Calendar","ZapSign"]},
+  {"category":"Logística e fiscal","names":["Lalamove","Focus NFe"]},
+  {"category":"Automação e dados","names":["n8n","API própria","Webhooks"]}
+]

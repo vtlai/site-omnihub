@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "url": "https://static.xx.fbcdn.net/rsrc.php/yf/r/-7pQO6hUGK_.svg",
+    "file": "meta.svg",
+    "bytes": 8912
+  },
+  "twilio": {
+    "url": "https://www.twilio.com/content/dam/twilio-com/core-assets/social/apple-touch-icon.png",
+    "file": "twilio.png",
+    "bytes": 8103
+  },
+  "gupshup": {
+    "url": "https://gs-upload.gupshup.io/revamp/assets/v3/images/new-home-page/new-logo-gupshup.svg",
+    "file": "gupshup.svg",
+    "bytes": 8629
+  },
+  "wavoip": {
+    "url": "https://wavoip.com/_next/static/media/LogoDark.bd1d6b70.png",
+    "file": "wavoip.png",
+    "bytes": 111624
+  },
+  "asaas": {
+    "url": "https://cdn-boto.asaas.com/_next/static/media/header-logo.32m21jo32rre9.svg",
+    "file": "asaas.svg",
+    "bytes": 2498
+  },
+  "paypal": {
+    "url": "https://www.paypalobjects.com/marketing/web/icons/monogram/pp258.png",
+    "file": "paypal.png",
+    "bytes": 2252
+  },
+  "greenn": {
+    "url": "https://greenn.com.br/assets/apple-touch-greenn-180.png",
+    "file": "greenn.png",
+    "bytes": 10162
+  },
+  "hotmart": {
+    "url": "https://hotmart.com/static/app-hotmart-next/images/icons/apple-touch-icon.png",
+    "file": "hotmart.png",
+    "bytes": 1641
+  },
+  "kiwify": {
+    "url": "https://kiwify.com.br/_astro/logo.Bi70aw49.svg",
+    "file": "kiwify.svg",
+    "bytes": 1311
+  },
+  "advbox": {
+    "url": "https://advbox.com.br/",
+    "file": "advbox.svg",
+    "note": "SVG do cabe\u00e7alho oficial. N8n: cores das classes explicitadas para uso como imagem."
+  },
+  "judit": {
+    "url": "https://judit.io/wp-content/uploads/2024/02/favicon-judit.png",
+    "file": "judit.png",
+    "bytes": 989
+  },
+  "google-calendar": {
+    "url": "https://www.gstatic.com/images/branding/productlogos/calendar_2026/v2/web/192px.svg",
+    "file": "google-calendar.svg",
+    "bytes": 3330
+  },
+  "zapsign": {
+    "url": "https://zapsign.com.br/hubfs/raw_assets/public/ZapSign_v2/images/logo.svg",
+    "file": "zapsign.svg",
+    "bytes": 6325
+  },
+  "lalamove": {
+    "url": "https://www.lalamove.com/hubfs/Lalamove%20Website%202020/logo.svg",
+    "file": "lalamove.svg",
+    "bytes": 5236
+  },
+  "focus-nfe": {
+    "url": "https://focusnfe.com.br/assets/img/favicon/android-chrome-192x192.png",
+    "file": "focus-nfe.png",
+    "bytes": 6318
+  },
+  "n8n": {
+    "url": "https://n8n.io/",
+    "file": "n8n.svg",
+    "note": "SVG do cabe\u00e7alho oficial. N8n: cores das classes explicitadas para uso como imagem."
+  },
+  "tecnovoz": {
+    "url": "https://tecnovoz.com.br/images/logo.svg",
+    "file": "tecnovoz.svg"
+  }
+}
