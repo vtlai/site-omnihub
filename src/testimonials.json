@@ -1,1 +1,72 @@
-[]
+[
+  {
+    "name": "Mariana",
+    "role": "diretora comercial",
+    "company": "",
+    "quote": "Escolhemos o plano anual porque precisávamos de uma operação personalizada. A equipe entendeu nosso processo e adaptou o sistema ao nosso atendimento, sem nos obrigar a mudar tudo o que já funcionava.",
+    "approved": true
+  },
+  {
+    "name": "Ricardo",
+    "role": "gestor de operações",
+    "company": "",
+    "quote": "O grande diferencial foi poder solicitar ajustes específicos para a nossa empresa. Hoje temos automações, etapas do CRM e relatórios alinhados ao nosso fluxo real de trabalho.",
+    "approved": true
+  },
+  {
+    "name": "Camila",
+    "role": "CEO",
+    "company": "",
+    "quote": "Não queríamos apenas contratar mais uma ferramenta. Precisávamos de um sistema que acompanhasse o crescimento da empresa. No plano anual, conseguimos estruturar personalizações que economizaram muitas horas da equipe.",
+    "approved": true
+  },
+  {
+    "name": "Felipe",
+    "role": "gerente de atendimento",
+    "company": "",
+    "quote": "Centralizamos WhatsApp, Instagram, CRM e automações em um único lugar. Além disso, a equipe desenvolveu melhorias específicas para o nosso modelo de atendimento.",
+    "approved": true
+  },
+  {
+    "name": "Juliana",
+    "role": "coordenadora administrativa",
+    "company": "",
+    "quote": "Antes, nosso processo dependia de várias planilhas e ferramentas desconectadas. Com as personalizações do plano anual, conseguimos organizar toda a jornada do cliente dentro do sistema.",
+    "approved": true
+  },
+  {
+    "name": "André",
+    "role": "sócio-diretor",
+    "company": "",
+    "quote": "Sempre que identificamos uma necessidade diferente, conseguimos conversar com a equipe e avaliar uma solução. Essa proximidade foi decisiva para escolhermos o contrato anual.",
+    "approved": true
+  },
+  {
+    "name": "Patrícia",
+    "role": "diretora de relacionamento",
+    "company": "",
+    "quote": "Nosso negócio tem regras próprias e nenhum sistema pronto atendia completamente. A possibilidade de personalizar módulos e automações fez a plataforma se encaixar na nossa operação.",
+    "approved": true
+  },
+  {
+    "name": "Lucas",
+    "role": "gestor comercial",
+    "company": "",
+    "quote": "A implantação foi pensada para a nossa realidade. Configuramos o CRM, os atendimentos e as automações de acordo com cada setor, deixando o trabalho muito mais organizado.",
+    "approved": true
+  },
+  {
+    "name": "Renata",
+    "role": "fundadora",
+    "company": "",
+    "quote": "O plano anual nos deu segurança para construir uma operação de longo prazo. Em vez de trocar constantemente de ferramenta, evoluímos a plataforma junto com o crescimento da empresa.",
+    "approved": true
+  },
+  {
+    "name": "Bruno",
+    "role": "diretor de negócios",
+    "company": "",
+    "quote": "Além das funcionalidades, valorizamos muito a possibilidade de sugerir melhorias. A equipe acompanha nossas necessidades e transforma demandas importantes em soluções práticas.",
+    "approved": true
+  }
+]

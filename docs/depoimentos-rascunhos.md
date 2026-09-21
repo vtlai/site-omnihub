@@ -31,4 +31,4 @@ Rascunhos de estrutura, não declarações de clientes. Nenhum texto abaixo foi 
 
 ## Componente do site
 
-O carrossel está preparado em `src/testimonials.py`. A lista `src/testimonials.json` inicia vazia, então nenhuma seção vazia aparece na publicação. Adicione somente relatos reais autorizados com os campos `name`, `role`, `company`, `quote` e `approved: true`. O build escapa o texto e gera o carrossel automaticamente. Os exemplos fictícios da prévia local não fazem parte dessa lista.
+O carrossel está preparado em `src/testimonials.py`. A lista `src/testimonials.json` contém os dez relatos fornecidos por Eduardo e confirmados por ele como relatos reais de clientes, formatados com auxílio de IA. Foram preservados os nomes, cargos e textos enviados; nenhuma empresa foi acrescentada. Quando a lista de relatos aprovados estiver vazia, a seção não aparece na publicação. Adicione somente relatos reais autorizados com os campos `name`, `role`, `company`, `quote` e `approved: true`. O build escapa o texto e gera o carrossel automaticamente. Os exemplos fictícios da prévia local não fazem parte dessa lista.
