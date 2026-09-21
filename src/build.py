@@ -1,5 +1,6 @@
 from pathlib import Path
 import json
+import runpy
 from urllib.parse import urlencode
 R=Path(__file__).resolve().parent.parent
 WA='https://wa.me/5519996414843?text=Ol%C3%A1%21%20Quero%20conhecer%20a%20OmniHub%20para%20minha%20empresa.'
@@ -56,8 +57,11 @@ for i,row in enumerate([brand_cards[:9],brand_cards[9:]]):
  sequence=''.join(row)
  integration_groups+=f'<div class="integration-marquee" role="region" aria-label="Integrações da OmniHub, faixa {i+1}"><div class="integration-track {"reverse" if i else ""}"><div class="integration-sequence">{sequence}</div><div class="integration-sequence" aria-hidden="true">{sequence}</div></div></div>'
 integration_filters='<div class="integration-filters" role="group" aria-label="Filtrar integrações por área" hidden><button type="button" data-integration-filter="all" aria-pressed="true" aria-controls="integration-carousel integration-results">Todas</button>'+''.join(f'<button type="button" data-integration-filter="{i}" aria-pressed="false" aria-controls="integration-carousel integration-results">{g["category"]}</button>' for i,g in enumerate(integrations))+'</div>'
+render_testimonials=runpy.run_path(str(R/'src/testimonials.py'))['render_testimonials']
+testimonials=json.loads((R/'src/testimonials.json').read_text())
+testimonials_html=render_testimonials([item for item in testimonials if item.get('approved') is True])
 home=(R/'src/home.html').read_text()
-for token,value in {'WA':WA,'WA_DEMO':WA_DEMO,'CLIENTS':client_imgs(range(len(clients))),'PLAN_ROWS':planrows,'PLAN_COMPARISON':comparison(True),'FAQ':faqhtml,'CUSTOMER_STORY':delivery_html,'INTEGRATION_GROUPS':integration_groups,'INTEGRATION_FILTERS':integration_filters}.items():
+for token,value in {'WA':WA,'WA_DEMO':WA_DEMO,'CLIENTS':client_imgs(range(len(clients))),'PLAN_ROWS':planrows,'PLAN_COMPARISON':comparison(True),'FAQ':faqhtml,'CUSTOMER_STORY':delivery_html,'TESTIMONIALS':testimonials_html,'INTEGRATION_GROUPS':integration_groups,'INTEGRATION_FILTERS':integration_filters}.items():
  home=home.replace('{{'+token+'}}',value)
 (R/'index.html').write_text(page('OmniHub | O CRM que se adapta à sua empresa','Sua empresa não precisa se adaptar às limitações do software. Reúna CRM e atendimento com personalização de funcionalidades e integrações no anual, sob análise técnica.',home))
 subhero=lambda label,title,desc:f'<section class="subhero"><div class="wrap"><span class="eyebrow">{label}</span><h1>{title}</h1><p>{desc}</p></div></section>'

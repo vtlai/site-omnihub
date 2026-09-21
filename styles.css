@@ -80,3 +80,20 @@
 @media(min-width:901px) and (max-width:1150px){.nav{gap:20px}.nav nav{gap:16px}.nav .brand img{width:125px}.nav .button.small{gap:10px}}
 @media(max-width:900px){.hero-with-product{padding:48px 0}.hero-with-product .hero-layout{gap:28px;grid-template-columns:1fr 1fr}.hero-with-product h1{font-size:38px}.hero-with-product .hero-description{font-size:16px}.hero-product{padding:8px}.hero-product figcaption{font-size:10px;gap:9px}.hero-product figcaption img{width:86px}}
 @media(max-width:650px){.hero-with-product{padding:40px 0 32px}.hero-with-product .hero-layout{display:flex;flex-direction:column;gap:32px;align-items:stretch}.hero-with-product h1{font-size:clamp(36px,9vw,54px)}.hero-with-product .hero-description{font-size:16px;margin-top:23px}.hero-with-product .hero-actions{justify-content:flex-start}.hero-product figcaption{font-size:11px}.hero-product figcaption img{width:100px}.hero-with-product+.clients .clients-caption>p{font-size:19px}}
+
+/* Depoimentos: sequência contínua, sem avanço abrupto de cartões. */
+.testimonials-carousel{background:var(--navy);color:#fff;margin-bottom:80px;overflow:hidden;padding:76px 0}
+.testimonials-carousel h2{margin-bottom:36px}
+.quotes-window{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
+.quotes-track{display:flex;width:max-content;animation:quotes-scroll 80s linear infinite}
+.quotes-sequence{display:flex;gap:24px;padding-right:24px;flex-shrink:0}
+.quote-card{width:390px;margin:0;padding:30px;display:flex;flex-direction:column;border:1px solid #3c536c;border-radius:8px;background:#102c47}
+.quote-card blockquote{margin:0 0 30px;font-size:20px;line-height:1.65;letter-spacing:-.025em;flex:1}
+.quote-card figcaption{display:flex;align-items:center;gap:14px}.quote-avatar{height:44px;width:44px;flex-shrink:0;display:grid;place-items:center;background:#284a6b;color:#e0edff;border-radius:50%;font-size:13px}
+.quote-card figcaption strong,.quote-card figcaption span,.quote-card figcaption b{display:block}.quote-card figcaption strong{font-size:14px;font-weight:600}.quote-card figcaption div>span{font-size:12px;color:#b8cce1;margin:2px 0}.quote-card figcaption b{font-size:12px;font-weight:500}
+.quotes-window:hover .quotes-track,.quotes-window:focus-within .quotes-track{animation-play-state:paused}
+@keyframes quotes-scroll{to{transform:translateX(-50%)}}
+@media(max-width:650px){.testimonials-carousel{padding:50px 0;margin-bottom:50px}.testimonials-carousel h2{font-size:34px;margin-bottom:28px}.quote-card{width:280px;padding:24px}.quote-card blockquote{font-size:18px}.quotes-sequence{gap:16px;padding-right:16px}}
+@media(prefers-reduced-motion:reduce){.quotes-window{overflow-x:auto;mask-image:none}.quotes-track{animation:none}.quotes-sequence[aria-hidden=true]{display:none}}
+
+.quote-avatar{background:#e5e7eb;color:#9ca3af;overflow:hidden}.quote-avatar>svg{display:block;width:100%;height:100%}

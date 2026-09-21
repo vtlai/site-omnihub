@@ -28,3 +28,7 @@ Rascunhos de estrutura, não declarações de clientes. Nenhum texto abaixo foi 
 2. O que mudou de fato e como vocês usam isso hoje?
 3. Qual exemplo concreto você daria a outra empresa?
 4. Podemos publicar sua resposta, com seu nome, cargo e empresa?
+
+## Componente do site
+
+O carrossel está preparado em `src/testimonials.py`. A lista `src/testimonials.json` inicia vazia, então nenhuma seção vazia aparece na publicação. Adicione somente relatos reais autorizados com os campos `name`, `role`, `company`, `quote` e `approved: true`. O build escapa o texto e gera o carrossel automaticamente. Os exemplos fictícios da prévia local não fazem parte dessa lista.
