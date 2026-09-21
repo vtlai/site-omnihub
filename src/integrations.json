@@ -1,8 +1,81 @@
 [
-  {"category":"Atendimento e telefonia","names":["Meta","Twilio","Gupshup","Wavoip","TecnoVoz","E-mail"]},
-  {"category":"Pagamentos e vendas","names":["Asaas","PayPal","Greenn","Hotmart","Kiwify"]},
-  {"category":"Jurídico","names":["ADVBOX","Judit"]},
-  {"category":"Agenda e documentos","names":["Google Calendar","ZapSign"]},
-  {"category":"Logística e fiscal","names":["Lalamove","Focus NFe"]},
-  {"category":"Automação e dados","names":["n8n","API própria","Webhooks"]}
+  {
+    "category": "Atendimento e telefonia",
+    "names": [
+      "Meta",
+      "Twilio",
+      "Gupshup",
+      "Wavoip",
+      "TecnoVoz",
+      "E-mail"
+    ],
+    "use_cases": {
+      "Meta": "Conectar canais de atendimento",
+      "Twilio": "Integrar comunicação com clientes",
+      "Gupshup": "Conectar mensagens ao atendimento",
+      "Wavoip": "Conectar chamadas à operação",
+      "TecnoVoz": "Integrar telefonia ao atendimento"
+    }
+  },
+  {
+    "category": "Pagamentos e vendas",
+    "names": [
+      "Asaas",
+      "PayPal",
+      "Greenn",
+      "Hotmart",
+      "Kiwify"
+    ],
+    "use_cases": {
+      "Asaas": "Conectar cobranças à operação",
+      "PayPal": "Integrar informações de pagamentos",
+      "Greenn": "Acompanhar clientes pagantes",
+      "Hotmart": "Conectar vendas à operação",
+      "Kiwify": "Integrar informações de vendas"
+    }
+  },
+  {
+    "category": "Jurídico",
+    "names": [
+      "ADVBOX",
+      "Judit"
+    ],
+    "use_cases": {
+      "ADVBOX": "Conectar a operação jurídica",
+      "Judit": "Consultar informações de tribunais"
+    }
+  },
+  {
+    "category": "Agenda e documentos",
+    "names": [
+      "Google Calendar",
+      "ZapSign"
+    ],
+    "use_cases": {
+      "Google Calendar": "Conectar a agenda da equipe",
+      "ZapSign": "Integrar o fluxo de assinaturas"
+    }
+  },
+  {
+    "category": "Logística e fiscal",
+    "names": [
+      "Lalamove",
+      "Focus NFe"
+    ],
+    "use_cases": {
+      "Lalamove": "Cotar e solicitar fretes",
+      "Focus NFe": "Conectar a emissão fiscal"
+    }
+  },
+  {
+    "category": "Automação e dados",
+    "names": [
+      "n8n",
+      "API própria",
+      "Webhooks"
+    ],
+    "use_cases": {
+      "n8n": "Conectar fluxos de automação"
+    }
+  }
 ]

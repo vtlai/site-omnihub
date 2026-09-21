@@ -46,3 +46,20 @@
 .demo-section .video-preview{padding:10px;width:100%;box-shadow:none}
 @media(max-width:900px){.demo-layout{gap:32px}.demo-intro h2{font-size:34px}.demo-intro p{font-size:16px}}
 @media(max-width:650px){.hero-focused{padding:52px 0}.hero-focused h1{font-size:clamp(36px,9vw,56px);line-height:1.1}.hero-focused .hero-description{font-size:16px;margin-top:23px;max-width:370px}.hero-focused .hero-description br{display:none}.hero-focused .hero-actions{margin-top:26px}.hero-focused .hero-actions .button{font-size:14px;padding:16px 20px}.demo-section{padding:44px 0}.demo-layout{grid-template-columns:1fr;gap:25px}.demo-intro h2{font-size:34px}.demo-intro h2 br{display:none}.demo-intro p{max-width:350px;margin-top:14px}.demo-section .video-preview{padding:7px}}
+
+/* Integrações por área e comparação resumida na página inicial. */
+.integration-filters{display:flex;flex-wrap:wrap;gap:9px;margin:30px 0 24px}
+.integration-filters[hidden],.integration-carousel[hidden],.integration-results[hidden],.integration-count[hidden]{display:none}
+.integration-filters button{background:#fff;border:1px solid var(--line);border-radius:5px;padding:10px 14px;font-size:13px;line-height:1.4}
+.integration-filters button[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:#fff}
+.integration-filters button:hover{border-color:var(--blue)}
+.integration-results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:24px 0}
+.integration-results .integration-brand{width:auto}
+.integration-use-case{font-size:13px;line-height:1.55;color:var(--ink);margin-top:13px}
+.integration-count{font-size:13px;color:var(--muted);margin-bottom:20px}
+.comparison-compact{margin-top:44px}
+.comparison-compact h2{font-size:26px;margin-bottom:22px;letter-spacing:-.035em}
+.comparison-compact .fine{font-size:12px;color:var(--muted);margin-top:15px;max-width:760px}
+@media(max-width:900px){.integration-results{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:650px){.integration-results{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.integration-results .brand-art img{max-width:100%}.integration-filters{gap:7px}.integration-filters button{font-size:12px;padding:9px 11px}.comparison-compact h2{font-size:24px}.integration-use-case{font-size:12px}}
+@media(max-width:650px){.comparison-compact .table-scroll{margin-right:0}.comparison-compact table{min-width:0;width:100%;table-layout:fixed}.comparison-compact th,.comparison-compact td{padding:12px 5px;font-size:11px;line-height:1.5;overflow-wrap:anywhere}.comparison-compact th:first-child{width:31%}.comparison-compact thead th{font-size:10px}.comparison-compact td{white-space:normal}}

@@ -41,19 +41,27 @@
       if(next!==undefined){event.preventDefault();deliveryTabs[next].focus();selectDelivery(deliveryTabs[next]);}
     });
   });
-  const caseRequests = {
-    lalamove: {system:'Integração de fretes',detail:'Quero avaliar uma integração para cotar e solicitar fretes na minha operação.'},
-    judit: {system:'Consulta de dados jurídicos',detail:'Quero avaliar uma integração de consulta de dados jurídicos na minha operação.'},
-    greenn: {system:'Integração de pagamentos',detail:'Quero avaliar uma integração para acompanhar clientes pagantes na minha operação.'}
-  };
-  document.querySelectorAll('[data-case-request]').forEach(link=>link.addEventListener('click',()=>{
-    const form=document.querySelector('#customization-form');
-    const item=caseRequests[link.dataset.caseRequest];
-    if(!form.elements.system.value)form.elements.system.value=item.system;
-    if(!form.elements.detail.value)form.elements.detail.value=item.detail;
-    form.elements.system.setCustomValidity('');
-    form.elements.system.focus({preventScroll:true});
-  }));
+  const integrationFilters = document.querySelector('.integration-filters');
+  if (integrationFilters) {
+    const carousel = document.querySelector('#integration-carousel');
+    const results = document.querySelector('#integration-results');
+    const status = document.querySelector('.integration-count');
+    const brands = [...carousel.querySelectorAll('.integration-sequence:not([aria-hidden]) .integration-brand')];
+    const buttons = [...integrationFilters.querySelectorAll('button')];
+    integrationFilters.hidden = false;
+    buttons.forEach(button => button.addEventListener('click', () => {
+      const category = button.dataset.integrationFilter;
+      const all = category === 'all';
+      const matches = all ? brands : brands.filter(brand => brand.dataset.integrationCategory === category);
+      buttons.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+      results.replaceChildren(...(all ? [] : matches.map(brand => brand.cloneNode(true))));
+      carousel.hidden = !all;
+      results.hidden = all;
+      status.hidden = false;
+      status.textContent = `${matches.length} ${matches.length === 1 ? 'integração' : 'integrações'} · ${button.textContent}`;
+    }));
+  }
+
   const requestForm = document.querySelector('#customization-form');
   if(requestForm) {
     requestForm.querySelector('button[type="submit"]').disabled = false;
@@ -63,7 +71,7 @@
       if(!system.value.trim()) { system.setCustomValidity('Informe o sistema ou processo que deseja avaliar.'); system.reportValidity(); return; }
       system.setCustomValidity('');
       const data = new FormData(requestForm);
-      const message = ['Olá! Quero avaliar uma personalização da OmniHub.', '', `Tipo: ${data.get('type')}`, `Sistema ou processo: ${String(data.get('system')).trim()}`, String(data.get('detail')).trim() ? `Necessidade: ${String(data.get('detail')).trim()}` : '', '', 'Gostaria de entender a viabilidade técnica e as condições no plano anual.'].filter((line,index,all) => line !== '' || all[index-1] !== '').join('\n');
+      const message = ['Olá! Quero agendar uma demonstração da OmniHub para minha empresa.', '', `Tipo: ${data.get('type')}`, `Sistema ou processo: ${String(data.get('system')).trim()}`, String(data.get('detail')).trim() ? `Necessidade: ${String(data.get('detail')).trim()}` : '', '', 'Gostaria de entender a viabilidade técnica e as condições no plano anual.'].filter((line,index,all) => line !== '' || all[index-1] !== '').join('\n');
       const destination = new URL('https://wa.me/5519996414843');
       destination.searchParams.set('text',message);
       window.open(destination.href,'_blank','noopener,noreferrer');
