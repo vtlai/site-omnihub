@@ -97,3 +97,5 @@
 @media(prefers-reduced-motion:reduce){.quotes-window{overflow-x:auto;mask-image:none}.quotes-track{animation:none}.quotes-sequence[aria-hidden=true]{display:none}}
 
 .quote-avatar{background:#e5e7eb;color:#9ca3af;overflow:hidden}.quote-avatar>svg{display:block;width:100%;height:100%}
+
+.hero-product-screen>.hero-animation{display:block;width:100%;height:auto;aspect-ratio:990/640;object-fit:contain}

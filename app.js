@@ -7,6 +7,18 @@
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') { closeMenu(); menu.focus(); } });
   window.matchMedia('(min-width: 901px)').addEventListener('change', e => { if (e.matches) closeMenu(); });
 
+  const heroAnimation = document.querySelector('.hero-animation');
+  if (heroAnimation) {
+    const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+    function updateHeroMotion() {
+      heroAnimation.autoplay = !motionPreference.matches;
+      if (motionPreference.matches) heroAnimation.pause();
+      else heroAnimation.play().catch(() => {});
+    }
+    updateHeroMotion();
+    motionPreference.addEventListener('change', updateHeroMotion);
+  }
+
   const videoSlot = document.querySelector('#demo-player');
   document.querySelectorAll('[data-demo]').forEach(trigger => trigger.addEventListener('click', event => {
     if (!videoSlot) return;
